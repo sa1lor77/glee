@@ -1,0 +1,59 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+.header {
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+}
+
+.menu{
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+      padding-left: 35px;
+  }
+
+  &__list-link {
+    color: $default;
+    font-weight: bold;
+    @extend %rubik-500;
+  }
+  
+}
+
+.user-nav {
+  display: flex;
+  
+  &__link {
+    position: relative;
+  }
+  &__link+.user-nav__link {
+      padding-left: 40px;
+  }
+
+
+  &__link-img-other {
+    width: 25px;
+    background-color: #a3bbc8;
+    border-radius: 50px;
+
+    
+    
+
+  }
+    
+
+    
+  }
+
+
+@import 'media';
