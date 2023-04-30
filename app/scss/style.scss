@@ -1,0 +1,75 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+.header {
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+}
+
+.menu{
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+      padding-left: 35px;
+  }
+
+  &__list-link {
+    color: $default;
+    font-weight: bold;
+    @extend %rubik-500;
+  }
+  
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  
+  &__link {
+    position: relative;
+  }
+  &__link+.user-nav__link {
+    padding-left: 40px;
+  }
+  
+  &__ellipse-heart, &__ellipse-cart {
+    content: " ";
+    display: block;
+    width: 50px;
+    padding: 0;
+    background-color: chocolate;
+  }
+
+  
+  
+
+  &__circle {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    top: -25px;
+  }
+  
+  &__link-other {
+    padding: 15px;
+  }
+    
+
+    
+  }
+
+
+@import 'media';
